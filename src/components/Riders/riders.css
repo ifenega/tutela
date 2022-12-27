@@ -1,0 +1,330 @@
+.riders {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2rem auto;
+  justify-content: space-around;
+}
+.riders_left {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.riders .img_div {
+  padding: 15%;
+  background-color: #45aaa9;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+.riders img {
+  height: 100%;
+}
+.riders .riders_right,
+.riders .riders_left {
+  width: 50%;
+}
+.riders .riders_left {
+  margin-right: 2rem;
+}
+.riders .riders_right {
+  margin-left: 2rem;
+}
+.riders .riders_right h2 {
+  width: 70%;
+  margin-left: 2rem;
+  color: #20262a;
+  text-align: left;
+  font-size: 4vw;
+  font-weight: 900;
+  margin-bottom: 1.4rem;
+}
+.riders .riders_right p {
+  margin-left: 2rem;
+  line-height: 130%;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 400;
+  width: 80%;
+}
+.riders .riders_right .list_div {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.riders .riders_right p.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #008080;
+  box-shadow: 4px 6px 6px -1px #046b5f;
+}
+
+/************* Main Section  *************/
+.main {
+  width: 70%;
+  margin: 5rem auto;
+}
+
+.main h2.title {
+  font-size: 3vw;
+}
+.main h2 span {
+  color: var(--dark_grey);
+}
+
+.main .covered_cards,
+.main .not_covered_cards {
+  padding: 30px;
+  margin: 2rem auto;
+  width: 80%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 5%;
+}
+.main .not_covered_cards {
+  margin-bottom: 4rem;
+}
+.main .card {
+  margin-bottom: 50px;
+  width: 25%;
+  height: 250px;
+  padding: 20px;
+  border: solid 1px #45aaa9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 11px 11px 2px 1px #046b5f;
+}
+.main .card .txt {
+  width: 80%;
+  font-size: 1.5vw;
+}
+.main p.not_covered {
+  font-size: 1.5vw;
+  margin: 1rem;
+}
+
+/************* Questions Section *************/
+.questions {
+  margin: 3rem auto;
+  width: 70%;
+  font-size: 1.5vw;
+}
+.questions .q {
+  font-size: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+.questions .q h6 span {
+  color: var(--dark_grey);
+}
+.questions .q .icon {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 100;
+}
+.main .questions .answers {
+  padding: 20px;
+  font-size: 1vw;
+  text-align: left;
+  color: rgba(60, 60, 67, 0.85);
+}
+
+@media only screen and (max-width: 1200px) {
+  .riders .riders_left {
+    width: 40%;
+    margin-right: 0rem;
+  }
+  .riders .riders_right {
+    width: 60%;
+    margin-left: 1rem;
+  }
+  .riders .img_div {
+    padding: 30%;
+    width: 400px;
+    height: 400px;
+  }
+
+  .riders .riders_right .list_div {
+    width: 90%;
+  }
+  .riders .riders_right p.btn {
+    font-size: small;
+  }
+
+  /* Main */
+  .main {
+    width: 85%;
+  }
+
+  .main p.not_covered {
+    font-size: 1.9vw;
+  }
+
+  /* questions */
+  .main .questions .answers {
+    font-size: 1.3vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+  .riders .riders_right h2 {
+    width: 50%;
+    font-size: 3vw;
+  }
+  .riders .riders_right p {
+    line-height: 100%;
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+  .riders .img_div {
+    padding: 25%;
+    width: 300px;
+    height: 300px;
+  }
+
+  .riders .riders_right .list_div {
+    width: 100%;
+  }
+  .riders .riders_right p.btn {
+    padding: 5px;
+    font-size: 11px;
+  }
+
+  /* Main */
+  .main {
+    width: 85%;
+  }
+
+  .main .card {
+    padding: 10px;
+    height: 200px;
+  }
+
+  .main p.not_covered {
+    font-size: 1.9vw;
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  /* questions */
+
+  .questions .q {
+    font-size: 30px;
+  }
+  .main .questions .answers {
+    font-size: 1.4vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+  .riders .riders_right h2 {
+    font-size: 3vw;
+  }
+  .riders .riders_right p {
+    font-size: 1rem;
+  }
+  .riders .img_div {
+    padding: 30%;
+  }
+
+  /* Main */
+  .main {
+    width: 90%;
+  }
+
+  /* questions */
+  .main .questions .answers {
+    font-size: 1.5vw;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .riders .riders_left {
+    display: none;
+  }
+  .riders .riders_right h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 6vw;
+  }
+
+  .riders .riders_right {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .riders .riders_right *{
+    margin: 0;
+    padding: 0;
+  }
+  .riders .riders_left {
+    width: 40%;
+    margin-right: 0;
+  }
+  .riders .riders_right p {
+    font-size: 3.3vw;
+    line-height: 115%;
+  }
+  .riders .img_div {
+    padding: 40%;
+    width: 200px;
+    height: 200px;
+  }
+  .riders .list_div {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-evenly;
+  }
+  .riders .riders_right p.btn {
+    font-size: x-small;
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  /* Main */
+  .main {
+    width: 100%;
+  }
+  .main h2.title {
+    font-size: 4.3vw;
+    width: 100%;
+  }
+  .main .covered_cards,
+  .main .not_covered_cards {
+    justify-content: space-around;
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .main .card {
+    width: 45%;
+  }
+
+  .main .card .txt {
+    font-size: 3vw;
+  }
+  .main p.not_covered {
+    font-size: 3vw;
+    margin: 1rem auto;
+  }
+  /* questions */
+  .questions .q {
+    font-size: 4.5vw;
+  }
+  .main .questions .answers {
+    font-size: 3vw;
+  }
+}

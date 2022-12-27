@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;500;700;900&display=swap");
+
+:root {
+  --dark_grey: #008080;
+  --blur-grey: #00808060;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
