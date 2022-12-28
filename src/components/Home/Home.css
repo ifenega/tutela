@@ -44,7 +44,7 @@
 .hero_tel_div span {
   height: 100%;
   font-size: 2vw;
-  padding: 20px;
+  padding-right: 13px;
   color: #5c5c5c;
   border-right: 2px solid var(--blur-grey);
 }
@@ -54,6 +54,7 @@
   outline: none;
   font-size: 2vw;
   padding: 10px;
+  /* height: 200%; */
 }
 .start_btn {
   font-size: 1.8rem;
@@ -62,7 +63,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 20px 17px;
+  padding: 10px 17px;
   line-height: 30px;
   border-radius: 12px;
   color: white;
@@ -170,12 +171,13 @@
   font-size: 2.2vw;
   font-weight: 400;
 }
-.coverage .info button {
-  margin-top: 4rem;
+.coverage button {
+  margin: 0rem auto 1rem;
 }
 /*********** Special Design Section ***********/
 .special {
   font-family: "Manrope", sans-serif;
+  margin-top: 3rem;
 }
 .special h1.title {
   font-size: 5vw;
@@ -229,12 +231,20 @@
 }
 .footer_top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 40px;
 }
-.footer .mid{
+.footer_top .icons_div {
+  flex: 1;
+}
+.footer_top .mid,
+.footer_top .newsletter {
+  flex: 3;
+}
+.footer .mid {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  /* background-color: #aaa; */
   margin-bottom: 40px;
 }
 .footer .icons {
@@ -283,9 +293,9 @@
 .footer .email {
   border: none;
   background-color: #f9f9f9;
-  font-size: 2.7vh;
+  font-size: 20px;
   width: 60%;
-  padding: 15px;
+  padding: 1px 15px;
 }
 .footer .btn {
   width: 40%;
@@ -353,6 +363,15 @@
 @media only screen and (max-width: 992px) {
   .hero_tel_div {
     width: 80%;
+    padding: 0;
+  }
+  .hero_tel_div span {
+    height: 100%;
+    font-size: 2vw;
+    padding: 2px;
+    padding-right: 8px;
+    color: #5c5c5c;
+    border-right: 2px solid var(--blur-grey);
   }
   .hero .start_btn {
     font-size: 1.5rem;
@@ -484,6 +503,10 @@
   .hero_tel_div {
     width: 85%;
   }
+  .hero_tel_div input {
+    font-size: 16px;
+  }
+
   .hero .start_btn {
     font-size: 1.4rem;
     width: 60%;
@@ -535,27 +558,80 @@
   }
 
   /* footer */
-  .footer {
-    margin-top: 5rem;
+  ::placeholder {
+    color: #18143335;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0;
   }
-  .footer_top .icons_div,{
+  .footer {
+    width: 100vw !important;
+    margin-top: 5rem;
+    padding: 0px 30px;
+  }
+  .footer_top {
+    flex-direction: column;
+  }
+  .footer .mid {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .footer .newsletter {
+    order: 2;
+  }
+  .footer .icons_div {
+    order: 3;
+  }
+  .footer .mid > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .footer .newsletter {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;flex-direction: column;
+    align-items: center;
+  }
+  .footer .btn {
+    width: 34%;
+    font-size: 2.5vw;
+    display: block;
+    margin: 1rem auto;
+    letter-spacing: 2px;
+  }
+  .footer_top .icons_div {
     flex: 1;
   }
-  .footer_top .mid{
+  .footer_top .mid {
     flex: 3;
   }
   .footer .icons {
     margin-top: 25px;
     height: 35%;
   }
-  .footer .socials {
-    width: 85%;
+  .footer .footer_top .logo_div {
+    width: 50%;
+    margin: 0 auto;
   }
-  .footer .title {
+  .footer .footer_top .socials {
+    width: 55%;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .footer h4.title {
+    font-size: 16px;
     text-align: left;
+    margin-bottom: 0;
   }
   .footer .list {
     font-size: 1.6vw;
+    text-align: center;
   }
   .footer .products .list {
     margin-left: -1rem;
@@ -567,13 +643,18 @@
   .footer .newsletter {
     flex: 2;
   }
+  .footer .newsletter .list {
+    width: 80%;
+    font-size: 12px;
+    text-align: center;
+  }
   .footer .email_div {
-    width: 90%;
-    margin: 0px 0;
+    width: 80%;
+    margin: 0px auto;
   }
   .footer .email {
     font-size: 1.8vw;
-    padding: 7px 15px;
+    padding: 5px 7px;
   }
   .footer .btn {
     width: 50%;
@@ -595,7 +676,7 @@
     font-size: 4.2vw;
     width: 60%;
   }
-  .hero_trust{
+  .hero_trust {
     font-size: 3.3vw;
   }
 
@@ -634,15 +715,15 @@
     align-items: center;
     width: 100%;
   }
-  .special .design_card{
+  .special .design_card {
     margin: 1rem;
     width: 50%;
   }
-.special .design_card .rect {
-  position: absolute;
-  z-index: -3;
-  width: 100%;
-}
+  .special .design_card .rect {
+    position: absolute;
+    z-index: -3;
+    width: 100%;
+  }
   .special .design_card .img {
     top: 7px;
   }
@@ -658,55 +739,38 @@
   .footer {
     margin-top: 5rem;
   }
-  .footer_top{
+  .footer_top .mid{
+    display: flex;
     flex-direction: column;
   }
-  .footer .mid{
-    order: 1;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+  .footer .footer_top .mid > div{
+    width: 100%;
   }
-  .footer .mid > div, .footer .newsletter{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
+  .footer .newsletter .title {
+    margin-bottom: 10px;
   }
-  .footer .mid .title, .footer .newsletter .title{
-    font-size: 3vw;
-  }
-  .footer .mid .list, .footer .newsletter p.list{
-    font-size: 2.5vw;
-    margin-left: 60px;
+  .footer .mid .list {
+    font-size: 14px;
     line-height: normal;
     margin-bottom: 0;
     width: 100%;
   }
-  .footer .newsletter p.list{
-    font-size: 3vw;
-  }
-  .footer .newsletter {
-    order: 2;
-  }
-  .footer .icons_div{
-    order: 3;
+  .footer .newsletter p.list {
   }
   .footer .icons {
     margin-top: 25px;
     height: 35%;
   }
-  .footer .footer_top .logo_div{
+  .footer .footer_top .logo_div {
     width: 50%;
     margin: 0 auto;
   }
-  .footer .footer_top .socials{
+  .footer .footer_top .socials {
     width: 55%;
     margin-top: 20px;
     font-size: 20px;
   }
-  
+
   .footer .title {
     text-align: left;
   }
@@ -718,8 +782,8 @@
     margin: 0px 0;
   }
   .footer .email {
-    font-size: 2.7vw;
-    padding: 7px 15px;
+    font-size: 14px;
+    padding: 7px 5px;
   }
   .footer .btn {
     width: 34%;

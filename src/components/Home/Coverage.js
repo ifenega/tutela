@@ -30,12 +30,12 @@ const Coverage = () => {
         <div className="details">
           <h2>Buy in seconds</h2>
           <p>Buy instantly without phone calls or paperwork.</p>
-          <Button />
         </div>
         <div className="img_div">
           <img className="img_right" src={pie_charts} alt="" />
         </div>
       </div>
+      <Button />
       <div className="info">
         <div className="img_div">
           <img className="img_left" src={start} alt="" />
@@ -46,12 +46,12 @@ const Coverage = () => {
             Accidents, bad guys or Mother Nature. We will sort it out, no
             hassles.
           </p>
-          <Button />
         </div>
         <div className="img_div">
           <img className="img_right" src={romance} alt="" />
         </div>
       </div>
+      <Button />
     </div>
   );
 };
