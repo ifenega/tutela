@@ -373,7 +373,7 @@
     font-size: 1.5rem;
     padding: 10px 0px;
     width: 85%;
-    border-radius: 5px;
+    border-radius: 0;
   }
 
   /* coverage */
@@ -787,5 +787,21 @@
     display: block;
     margin: 1rem auto;
     letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero .hero_tel_div {
+    /* padding: 0; */
+    /* justify-content: stretch; */
+    /* align-items: center; */
+  }
+  .hero span{
+  }
+  .hero .hero_tel_div input{
+  }
+  .hero .hero_tel_div button {
+    /* width: 40%; */
+    padding: .8rem 0;
   }
 }
