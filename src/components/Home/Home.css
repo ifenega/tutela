@@ -10,6 +10,9 @@
   justify-content: center;
 }
 
+.hero {
+  margin-bottom: 4rem;
+}
 .hero_img_div {
   display: flex;
   width: 100%;
@@ -92,8 +95,11 @@
 .coverage .title {
   font-size: 4vw;
   margin-top: 4rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   font-weight: 600;
+}
+.coverage h2.title {
+  margin-top: 5rem;
 }
 .coverage .protect {
   font-size: 3vw;
@@ -101,7 +107,7 @@
 }
 .coverage .card_div {
   padding: 30px;
-  margin: 2rem auto;
+  margin: 1rem auto;
   width: 80%;
   flex-wrap: wrap;
   display: flex;
@@ -127,7 +133,6 @@
   height: 70%;
   display: flex;
   justify-content: center;
-  /* margin: 1rem 0; */
 }
 .coverage_card .img {
   max-width: 40%;
@@ -137,13 +142,14 @@
   font-weight: 700;
   margin: 10px 0 20px;
 }
+.coverage h3.title {
+  margin-bottom: 6rem;
+}
 .coverage .title span {
   color: var(--dark_grey);
 }
 .coverage .info {
   display: flex;
-  /* display: grid;
-  grid-template-columns: auto auto auto;  */
 }
 .coverage .info > div {
   flex: 1;
@@ -329,6 +335,13 @@
   .coverage .card_div {
     margin-left: 15%;
     width: 70%;
+  }
+
+  .coverage h2.title{
+    margin-bottom: 20px;
+  }
+  .coverage h3.title{
+    margin-top: 20px;
   }
 
   /* design */
@@ -698,6 +711,11 @@
   .coverage_card {
     height: 250px;
   }
+  .coverage h3.title{
+    margin-top: 10px;
+    margin-bottom: 7vh;
+  }
+
   .coverage_card .img {
     max-width: 30%;
   }
@@ -792,9 +810,15 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .hero .hero_tel_div button, .footer .btn {
-    padding: .8rem 0;
+  .hero .hero_tel_div button,
+  .footer .btn {
+    padding: 0.8rem 0;
   }
+
+  .coverage .protect {
+    font-size: 13px;
+  }
+
   .special .design_card {
     margin: 2rem auto;
     width: 70%;
