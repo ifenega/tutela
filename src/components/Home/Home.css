@@ -797,4 +797,14 @@
   .hero .hero_tel_div button, .footer .btn {
     padding: .8rem 0;
   }
+  .special .design_card {
+    margin: 2rem auto;
+    width: 70%;
+  }
+  .special .design_card .title {
+    font-size: 15px;
+  }
+  .special .design_card .txt {
+    font-size: 13px;
+  }
 }
