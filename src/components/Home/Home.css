@@ -139,7 +139,6 @@
 }
 .coverage .info {
   display: flex;
-  margin: 2rem 0;
   /* display: grid;
   grid-template-columns: auto auto auto;  */
 }
@@ -350,9 +349,6 @@
   .footer .resources .list {
     margin-left: 10px;
   }
-  .footer .newsletter {
-    padding-left: 15px;
-  }
 
   .footer_bottom {
     font-size: smaller;
@@ -377,6 +373,7 @@
     font-size: 1.5rem;
     padding: 10px 0px;
     width: 85%;
+    border-radius: 5px;
   }
 
   /* coverage */
@@ -595,7 +592,8 @@
     text-align: center;
     margin: 0 auto;
     width: 100%;
-    display: flex;flex-direction: column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
   .footer .btn {
@@ -738,12 +736,13 @@
   /* footer */
   .footer {
     margin-top: 5rem;
+    padding: 0px;
   }
-  .footer_top .mid{
+  .footer_top .mid {
     display: flex;
     flex-direction: column;
   }
-  .footer .footer_top .mid > div{
+  .footer .footer_top .mid > div {
     width: 100%;
   }
   .footer .newsletter .title {
@@ -754,8 +753,6 @@
     line-height: normal;
     margin-bottom: 0;
     width: 100%;
-  }
-  .footer .newsletter p.list {
   }
   .footer .icons {
     margin-top: 25px;
@@ -778,8 +775,7 @@
     font-size: 1.6vw;
   }
   .footer .email_div {
-    width: 90%;
-    margin: 0px 0;
+    width: 100vw;
   }
   .footer .email {
     font-size: 14px;
