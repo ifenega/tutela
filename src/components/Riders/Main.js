@@ -8,6 +8,7 @@ import temp_dis from "../../img/riders_img/temp_disability.svg";
 import driving from "../../img/riders_img/drunk_driving.svg";
 import bed from "../../img/riders_img/hospital_bed.svg";
 import Card from "./Card";
+import Button from "../Home/Button";
 
 const Main = () => {
   return (
@@ -38,7 +39,9 @@ const Main = () => {
           txt="Driving without a Licence"
         />
         <Card img={bed} txt="Contributory Negligences" />
+        <Card img={bed} txt="Wear and Tear" />
       </div>
+      <Button />
       <h2 className="title">
         Your <span>questions</span> answered
       </h2>
@@ -62,7 +65,7 @@ const Main = () => {
       <Questions
         que={
           <div>
-            How <span>long</span> do I need to wait before I file a claim? 
+            How <span>long</span> do I need to wait before I file a claim?
           </div>
         }
         ans={

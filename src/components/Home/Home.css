@@ -100,11 +100,21 @@
   font-weight: bolder;
 }
 .coverage .card_div {
-  display: flex;
+  /* display: flex;
   justify-content: space-evenly;
   margin-top: 3rem;
+  column-gap: 5%;
   margin-left: 20%;
-  width: 60%;
+  width: 60%; */
+
+  padding: 30px;
+  margin: 2rem auto;
+  width: 80%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 
 .coverage_card {
@@ -117,6 +127,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .coverage_card .img_div {
@@ -572,9 +583,14 @@
   }
   .footer .mid {
     order: 1;
+    flex: 3;
     display: flex;
     flex-direction: row;
     gap: 20px;
+  }
+  .footer .mid .list {
+    font-size: 14px;
+    line-height: normal;
   }
   .footer .newsletter {
     order: 2;
@@ -606,9 +622,6 @@
   }
   .footer_top .icons_div {
     flex: 1;
-  }
-  .footer_top .mid {
-    flex: 3;
   }
   .footer .icons {
     margin-top: 25px;
@@ -750,8 +763,6 @@
     margin-bottom: 10px;
   }
   .footer .mid .list {
-    font-size: 14px;
-    line-height: normal;
     margin-bottom: 0;
     width: 100%;
   }
@@ -792,17 +803,7 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .hero .hero_tel_div {
-    /* padding: 0; */
-    /* justify-content: stretch; */
-    /* align-items: center; */
-  }
-  .hero span{
-  }
-  .hero .hero_tel_div input{
-  }
   .hero .hero_tel_div button {
-    /* width: 40%; */
     padding: .8rem 0;
   }
 }

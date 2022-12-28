@@ -6,6 +6,8 @@ import motorcycle from "../../img/motorcycle.svg";
 import start from "../../img/start.svg";
 import romance from "../../img/romance.svg";
 import shop from "../../img/shop.svg";
+import office from "../../img/office.svg";
+import hospital from "../../img/hospital.svg";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 
@@ -15,10 +17,14 @@ const Coverage = () => {
       <h2 className="title">Let's find the coverage you need</h2>
       <p className="protect">What would you like to protect today?</p>
       <div className="card_div">
-        <Link to="/riders#top">
+        <Link to="/riders">
           <CoverageCard img={motorcycle} txt="Riders Protection Plan" />
         </Link>
         <CoverageCard img={shop} txt="Shop Protection Plan" />
+        <Link to="/riders">
+          <CoverageCard img={office} txt="Office Protection Plan" />
+        </Link>
+        <CoverageCard img={hospital} txt="Health Protection Plan" />
       </div>
       <h3 className="title">
         We know you're <span>busy</span>, so we'll be <span>quick</span>.

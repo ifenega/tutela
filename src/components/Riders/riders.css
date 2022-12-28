@@ -1,3 +1,11 @@
+.logo {
+  width: 15vw;
+  text-align: left;
+}
+.logo img {
+  width: 100%;
+}
+
 .riders {
   display: flex;
   align-items: center;
@@ -48,7 +56,7 @@
   width: 80%;
 }
 .riders .riders_right .list_div {
-  margin-top: 2rem;
+  margin: 2rem auto;
   display: flex;
   justify-content: space-between;
 }
@@ -61,6 +69,10 @@
   padding: 10px;
   border: 1px solid #008080;
   box-shadow: 4px 6px 6px -1px #046b5f;
+}
+
+.riders .start_btn {
+  margin-top: 10px 15px;
 }
 
 /************* Main Section  *************/
@@ -87,7 +99,9 @@
   column-gap: 5%;
 }
 .main .not_covered_cards {
-  margin-bottom: 4rem;
+  margin-bottom: 0rem;
+}
+.main .not_covered_cards .start_btn {
 }
 .main .card {
   margin-bottom: 50px;
@@ -108,6 +122,10 @@
 .main p.not_covered {
   font-size: 1.5vw;
   margin: 1rem;
+}
+
+.main h2.title {
+  margin-top: 2rem;
 }
 
 /************* Questions Section *************/
@@ -249,6 +267,16 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .logo {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .logo img {
+    width: 70%;
+    max-width: 300px;
+  }
   .riders .riders_left {
     display: none;
   }
@@ -256,6 +284,7 @@
     width: 100%;
     text-align: center;
     font-size: 6vw;
+    margin-top: 0;
   }
 
   .riders .riders_right {
@@ -266,7 +295,7 @@
     justify-content: center;
     flex-direction: column;
   }
-  .riders .riders_right *{
+  .riders .riders_right * {
     margin: 0;
     padding: 0;
   }
@@ -293,14 +322,20 @@
     margin: 0 auto;
     width: 60%;
   }
+  .riders .riders_right .start_btn {
+    padding: 10px;
+    margin-bottom: 0;
+  }
 
   /* Main */
   .main {
     width: 100%;
+    margin-top: 3rem;
   }
   .main h2.title {
     font-size: 4.3vw;
     width: 100%;
+    margin: 0;
   }
   .main .covered_cards,
   .main .not_covered_cards {
@@ -319,6 +354,13 @@
   .main p.not_covered {
     font-size: 3vw;
     margin: 1rem auto;
+  }
+  .main .not_covered_cards{
+    margin-bottom: 0;
+  }
+  .main .start_btn {
+    margin-bottom: 3rem;
+    margin-top: 0;
   }
   /* questions */
   .questions .q {
