@@ -68,7 +68,7 @@
   text-align: center;
   padding: 10px;
   border: 1px solid #008080;
-  box-shadow: 4px 6px 6px -1px #046b5f;
+  /* box-shadow: 4px 6px 6px -1px #046b5f; */
 }
 
 .riders .start_btn {
@@ -101,12 +101,10 @@
 .main .not_covered_cards {
   margin-bottom: 0rem;
 }
-.main .not_covered_cards .start_btn {
-}
 .main .card {
   margin-bottom: 50px;
   width: 25%;
-  height: 250px;
+  height: 200px;
   padding: 20px;
   border: solid 1px #45aaa9;
   display: flex;
@@ -259,6 +257,10 @@
     width: 90%;
   }
 
+  .main .not_covered_cards {
+    width: 90%;
+  }
+
   /* questions */
   .main .questions .answers {
     font-size: 1.5vw;
@@ -313,7 +315,7 @@
     height: 200px;
   }
   .riders .list_div {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 15px;
     justify-content: space-evenly;
   }
@@ -355,7 +357,7 @@
     font-size: 3vw;
     margin: 1rem auto;
   }
-  .main .not_covered_cards{
+  .main .not_covered_cards {
     margin-bottom: 0;
   }
   .main .start_btn {
@@ -368,5 +370,11 @@
   }
   .main .questions .answers {
     font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main .not_covered_cards .card {
+    max-height: 160px;
   }
 }

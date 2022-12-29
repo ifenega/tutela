@@ -6,7 +6,8 @@ import death from "../../img/riders_img/death.svg";
 import repair from "../../img/riders_img/games_repair.svg";
 import temp_dis from "../../img/riders_img/temp_disability.svg";
 import driving from "../../img/riders_img/drunk_driving.svg";
-import bed from "../../img/riders_img/hospital_bed.svg";
+import noLicense from "../../img/riders_img/d_wt_license.svg";
+import wearNtear from "../../img/riders_img/wearNtear.svg";
 import Card from "./Card";
 import Button from "../Home/Button";
 
@@ -27,19 +28,17 @@ const Main = () => {
         What&apos;s <span> not</span> Covered
       </h2>
       <p className="not_covered">
-        It is equally important to know what&apos;s not covered in your
-        two-wheeler insurance policy, so that there are no surprises when you
-        make a claim. Here are some such situations:
+        It is equally important to know what's not covered in Riders Protection plan, so that there are no surprises when you make a claim. Here are
+        some such situations:
       </p>
       <div className="not_covered_cards">
         <Card img={driving} txt="Drunk Driving" />
         <Card
           className="licence"
-          img={medical}
+          img={noLicense}
           txt="Driving without a Licence"
         />
-        <Card img={bed} txt="Contributory Negligences" />
-        <Card img={bed} txt="Wear and Tear" />
+        <Card img={wearNtear} txt="Wear and Tear" />
       </div>
       <Button />
       <h2 className="title">
