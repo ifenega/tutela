@@ -20,22 +20,16 @@ const Coverage = () => {
         <Link to="/riders">
           <CoverageCard img={motorcycle} txt="Riders Protection Plan" />
         </Link>
-        <Link to="/">
+        <Link to="/shop-protection-plan">
           <CoverageCard img={shop} txt="Shop Protection Plan" />
         </Link>
-        <Link to="/" className="additional">
+        <Link to="/office-protection-plan" className="additional">
           <CoverageCard img={office} txt="Office Protection Plan" />
         </Link>
         <Link to="/" className="additional">
           <CoverageCard
             img={hospital}
-            txt={
-              <>
-                Health Protection Plan
-                <br />
-                <span className="mini">(Coming soon)</span>
-              </>
-            }
+            txt="Health Protection Plan"
           />
         </Link>
       </div>
