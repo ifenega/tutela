@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 const HeroRider = () => {
   return (
     <>
-      <div className="logo">
-        <Link to="/">
-          <img src={logo} alt="logo" />
+      <div className='flex items-center justify-center'>
+        <Link to='/' >
+          <img src={logo} alt='logo' />
         </Link>
       </div>
       <div className="riders">
