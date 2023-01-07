@@ -128,8 +128,8 @@
 
 /************* Questions Section *************/
 .questions {
-  margin: 3rem auto;
-  width: 70%;
+  margin: 20px auto;
+  width: 100%;
   font-size: 1.5vw;
 }
 .questions .q {

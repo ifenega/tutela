@@ -8,8 +8,8 @@ const Questions = ({que, ans}) => {
   };
   return (
     <div className="questions">
-      <div className="q">
-        <h6>{que}</h6>
+      <div className="q items-center">
+        <h6 className="font-bold text-xl text-left">{que}</h6>
         <span className="icon" onClick={handleClick}>{state ? <FaTimes /> : <FaPlus />}</span>
       </div>
       {state && <div className="answers">{ans}</div>}
