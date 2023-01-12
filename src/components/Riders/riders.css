@@ -40,7 +40,7 @@
 }
 .riders .riders_right h2 {
   width: 70%;
-  margin-left: 2rem;
+
   color: #20262a;
   text-align: left;
   font-size: 4vw;
@@ -48,12 +48,12 @@
   margin-bottom: 1.4rem;
 }
 .riders .riders_right p {
-  margin-left: 2rem;
+
   line-height: 130%;
   text-align: left;
   font-size: 1.3rem;
   font-weight: 400;
-  width: 80%;
+
 }
 .riders .riders_right .list_div {
   margin: 2rem auto;
@@ -159,7 +159,7 @@
   }
   .riders .riders_right {
     width: 60%;
-    margin-left: 1rem;
+
   }
   .riders .img_div {
     padding: 30%;

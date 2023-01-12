@@ -6,6 +6,7 @@ import {
   FaTwitter,
   FaInfinity,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer w-full">
@@ -24,21 +25,14 @@ const Footer = () => {
           </div>
         </div>
         <div className="mid">
-          <div className="company">
-            <h4 className="title">Company</h4>
-            <p className="list">About Us</p>
-            <p className="list">Careers</p>
-            <p className="list">Blog</p>
-          </div>
+         
           <div className="products">
             <h4 className="title">Product</h4>
-            <p className="list">Riders protection plan</p>
-            <p className="list">Shop protection plan</p>
+            <p className="list"><Link to='/riders' >Riders protection plan</Link></p>
+            <p className="list"><Link to='/shop-protection-plan' >Shop protection plan</Link></p>
+            <p className="list"><Link to='/office-protection-plan' >Office protection plan</Link></p>
           </div>
-          <div className="resources">
-            <h4 className="title">Resources</h4>
-            <p className="list">Education</p>
-          </div>
+
         </div>
         <div className="newsletter">
           <h4 className="title">Join Our Newsletter</h4>

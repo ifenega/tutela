@@ -22,20 +22,20 @@ const Office = () => {
             <section className='px-4 md:px-8 lg:px-24  pt-4 md:pt-16 pb-6  flex justify-center items-center flex-col '>
 
                 <div className='flex gap-5 md:gap-10 flex-col md:flex-row items-center justify-center 2xl:max-w-[1600px]'>
-                    <img src={houseIcon2} alt="" className='w-[200px] md:w-full' />
+                    <img src={houseIcon2} alt="" className='w-[200px] sm:w-[400px] lg:w-full' />
 
                     <div className='text-left'>
                         <h1 className='text-[#20262A] text-3xl sm:text-5xl lg:text-6xl mb-4 sm:mb-8 font-bold'>Office protection plan</h1>
                         <p className='mb-4 sm:mb-8'>Office protection plan protects you financially in the event that your office and property is damaged as a result of burglary or fire outbreak. It is designed essentially to cover the office contents and the building against loss as a result of burglary, fire & special peril.</p>
-                        <div className='flex flex-wrap gap-3 lg:gap-5 flex-col lg:flex-row'>
-                            <div className='border border-[#008080] p-3 font-semibold flex items-center justify-center text-black'>
-                                <p>Zero  Paper Work</p>
+                        <div className='flex  gap-3   flex-row justify-center'>
+                            <div className='border border-[#008080] p-2  flex items-center justify-center text-black'>
+                                <p className="text-sm font-normal">Zero  Paper Work</p>
                             </div>
-                            <div className='border border-[#008080] p-3 font-semibold flex items-center justify-center text-black'>
-                                <p>Quick Claim Process</p>
+                            <div className='border border-[#008080] p-3  flex items-center justify-center text-black'>
+                                <p className="text-sm font-normal">Quick Claim Process</p>
                             </div>
-                            <div className='border border-[#008080] p-3 font-semibold flex items-center justify-center text-black'>
-                                <p>Affordable Premium</p>
+                            <div className='border border-[#008080] p-3  flex items-center justify-center text-black'>
+                                <p className="text-sm font-normal">Affordable Premium</p>
                             </div>
                         </div>
 

@@ -15,22 +15,22 @@ const SpecialDesign = () => {
           img={frame}
           rect={rect}
           title="Zero paper work"
-          txt="End-to-end payments and financial management in a single solution."
-          txt2="Meet the right platform"
+          txt="You dont have ti fill any paper form or file a document ."
+         
         />
         <DesignCard
           rect={rect}
           img={frame2}
-          title="Zero paper work"
-          txt="End-to-end payments and financial management in a single solution."
-          txt2="Meet the right platform"
+          title="No Extra Fee"
+          txt="Choose an excess to fit your pocket. No hidden excesses when you claim."
+         
         />
         <DesignCard
           rect={rect}
           img={frame3}
-          title="Zero paper work"
-          txt="End-to-end payments and financial management in a single solution."
-          txt2="Meet the right platform"
+          title="Complete coverage"
+          txt="Full comprehensive cover. For accidents, thefts, hail storms and more."
+         
         />
       </div>
       <Button />

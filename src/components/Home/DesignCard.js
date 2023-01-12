@@ -1,6 +1,6 @@
 import React from "react";
 
-const DesignCard = ({ img, rect, title, txt, txt2 }) => {
+const DesignCard = ({ img, rect, title, txt }) => {
   return (
     <>
       <div className="design_card">
@@ -9,7 +9,7 @@ const DesignCard = ({ img, rect, title, txt, txt2 }) => {
         <div className="info">
           <h4 className="title">{title}</h4>
           <p className="txt">{txt}</p>
-          <p className="txt">{txt2}</p>
+
         </div>
       </div>
     </>
